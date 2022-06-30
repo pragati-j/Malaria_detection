@@ -19,7 +19,7 @@ This Dataset is taken from the official NIH Website: https://ceb.nlm.nih.gov/rep
 from google.colab import drive
 drive.mount('/content/gdrive')
 
-!unzip "/content/gdrive/My Drive/cell_images.zip"
+!unzip "/content/gdrive/My Drive/malaria.zip"
 
 """### Importing the libraries"""
 
@@ -31,8 +31,8 @@ import matplotlib.image as imread
 
 """Setting the directory of test and train images"""
 
-test_path = 'cell_images/test/'
-train_path = 'cell_images/train/'
+test_path = 'Dataset/Test/'
+train_path = 'Dataset/Train/'
 
 import tensorflow
 print(tensorflow.__version__)
